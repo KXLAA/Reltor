@@ -1,4 +1,9 @@
 import Head from 'next/head';
+import Layout from 'components/Layout';
+import Navigation from 'components/Navigation';
+import Hero from 'components/Hero';
+import Info from 'components/Info';
+import Recently from 'components/Recently';
 
 export default function Home() {
   return (
@@ -11,6 +16,13 @@ export default function Home() {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+
+      <Layout>
+        <Navigation />
+        <Hero />
+        <Info />
+        <Recently />
+      </Layout>
     </div>
   );
 }

@@ -1,4 +1,5 @@
 import { AppProps } from 'next/app';
+import Head from 'next/head';
 import { createGlobalStyle } from 'styled-components';
 import '@/styles/global.scss';
 
@@ -14,9 +15,7 @@ const GlobalStyle = createGlobalStyle`
   }
   body {
     line-height: 1.5;
-    font-family: 'Poppins', sans-serif;
-    background: #101010;
-    color: #e5e5e5;
+    font-family: 'Lufga', sans-serif;
     -webkit-font-smoothing: antialiased;
   }
   img, picture, video, canvas, svg {
@@ -41,6 +40,27 @@ const GlobalStyle = createGlobalStyle`
 export default function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
+      <Head>
+        <link
+          rel="preload"
+          href="/fonts/Lufga-Regular.otf"
+          as="font"
+          crossOrigin=""
+        />
+        <link
+          rel="preload"
+          href="/fonts/Lufga-Medium.otf"
+          as="font"
+          crossOrigin=""
+        />
+
+        <link
+          rel="preload"
+          href="/fonts/Lufga-SemiBold.otf"
+          as="font"
+          crossOrigin=""
+        />
+      </Head>
       <GlobalStyle />
       <Component {...pageProps} />
     </>
