@@ -2,7 +2,9 @@ import React from 'react';
 import styled from 'styled-components';
 import Image from 'next/image';
 
-const Container = styled.main``;
+const Container = styled.main`
+  margin-bottom: 120px;
+`;
 
 const Heading = styled.div`
   display: flex;
@@ -29,23 +31,25 @@ const Heading = styled.div`
 const Cards = styled.div`
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 32px;
+  gap: 36px;
 `;
 
 const Column = styled.div`
   display: flex;
+  width: 100%;
   flex-direction: column;
-  gap: 32px;
+  gap: 36px;
 `;
 
 const Card = styled.div`
+  width: 100%;
   background: #ffffff;
   border: 1.5px solid #dcdceb;
   border-radius: 30px;
   padding: 32px;
   display: flex;
   gap: 32px;
+  align-items: center;
 
   img {
     border-radius: 20px;
@@ -140,7 +144,6 @@ const Recently = () => {
               </Info>
             </Content>
           </Card>
-
           <Card>
             <Image
               width={158}
@@ -168,7 +171,6 @@ const Recently = () => {
               </Info>
             </Content>
           </Card>
-
           <Card>
             <Image
               width={158}
@@ -226,7 +228,6 @@ const Recently = () => {
               </Info>
             </Content>
           </Card>
-
           <Card>
             <Image
               width={158}
@@ -254,7 +255,6 @@ const Recently = () => {
               </Info>
             </Content>
           </Card>
-
           <Card>
             <Image
               width={158}

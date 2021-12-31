@@ -4,6 +4,8 @@ import Navigation from 'components/Navigation';
 import Hero from 'components/Hero';
 import Info from 'components/Info';
 import Recently from 'components/Recently';
+import Cta from 'components/Cta';
+import Footer from 'components/Footer';
 
 export default function Home() {
   return (
@@ -22,6 +24,8 @@ export default function Home() {
         <Hero />
         <Info />
         <Recently />
+        <Cta />
+        <Footer />
       </Layout>
     </div>
   );
