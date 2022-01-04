@@ -13,10 +13,6 @@ const Container = styled.div`
   justify-content: space-between;
   position: relative;
   margin-bottom: 105px;
-
-  img {
-    border-bottom-right-radius: 50px;
-  }
 `;
 
 const Text = styled.div`
@@ -44,28 +40,51 @@ const InputContainer = styled.div`
   margin-bottom: 68px;
   position: absolute;
   bottom: 30px;
+  background: rgba(255, 255, 255, 0.8);
   box-shadow: 0px 30px 60px -15px rgba(143, 144, 188, 0.15);
   border-radius: 20px;
+  backdrop-filter: blur(20px);
   width: 918px;
+  gap: 34px;
+  padding: 24px;
+  height: 102px;
   z-index: 2;
 `;
 
 const Input = styled.input`
   border: none;
-  background: rgba(255, 255, 255, 0.8);
-  backdrop-filter: blur(20px);
-  height: 102px;
+  background: none;
+
+  &::placeholder {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 36px;
+    color: #8f90a6;
+  }
+`;
+
+const Button = styled.img``;
+
+const InputText = styled.div`
   width: 100%;
+  border-right: 2px solid #dcdceb;
+
+  &:last-child {
+    border: none;
+  }
+
+  h3 {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 36px;
+    color: #110229;
+  }
 `;
 
-const InputLeft = styled(Input)`
-  border-top-left-radius: 20px;
-  border-bottom-left-radius: 20px;
-`;
-
-const InputRight = styled(Input)`
-  border-top-right-radius: 20px;
-  border-bottom-right-radius: 20px;
+const ImageContainer = styled.div`
+  img {
+    border-bottom-right-radius: 50px;
+  }
 `;
 
 const Hero = () => {
@@ -80,13 +99,28 @@ const Hero = () => {
         </p>
 
         <InputContainer>
-          <InputLeft />
-          <Input />
-          <InputRight />
+          <InputText>
+            <h3>Location</h3>
+            <Input placeholder="Select Your City" />
+          </InputText>
+
+          <InputText>
+            <h3>Property Type</h3>
+            <Input placeholder="Choose Property Type" />
+          </InputText>
+
+          <InputText>
+            <h3>Price Range</h3>
+            <Input placeholder="Choose Price Range" />
+          </InputText>
+
+          <Button src="/search button.svg" />
         </InputContainer>
       </Text>
 
-      <Image src="/Banner Image.png" alt="logo" width={780} height={680} />
+      <ImageContainer>
+        <Image src="/Banner Image.png" alt="logo" width={780} height={680} />
+      </ImageContainer>
     </Container>
   );
 };

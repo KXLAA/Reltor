@@ -24,7 +24,7 @@ const Container = styled.div`
 const Images = styled.div`
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 24px;
+  gap: 24;
 
   img {
     border-radius: 30px;
@@ -41,7 +41,7 @@ const ImageContainer = styled.div`
     line-height: 31px;
     position: absolute;
     z-index: 1;
-    top: 15%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
   }

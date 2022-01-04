@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import React from 'react';
 import styled from 'styled-components';
 import Image from 'next/image';
@@ -6,28 +7,28 @@ import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from 'react-icons/fa';
 const Container = styled.footer`
   display: flex;
   justify-content: space-between;
-  gap: 48px;
+  gap: 3rem;
 `;
 
 const Info = styled.div`
   display: flex;
   width: 100%;
-  max-width: 480px;
+  max-width: 30rem;
   flex-direction: column;
   align-items: flex-start;
-  gap: 32px;
+  gap: 2rem;
 `;
 const Icons = styled.div`
   display: flex;
-  gap: 28px;
-  font-size: 24px;
+  gap: 1.75rem;
+  font-size: 1.5rem;
 `;
 
 const Column = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 32px;
+  gap: 2rem;
 
   p {
     font-weight: normal;
@@ -38,29 +39,31 @@ const Column = styled.div`
 
   h1 {
     font-weight: 600;
-    font-size: 20px;
-    line-height: 36px;
+    font-size: 1.25rem;
+    line-height: 2.25rem;
     color: #110229;
   }
 
   a {
     color: #110229;
-    font-size: 18px;
+    font-size: 1.125rem;
   }
 `;
 
 const InputContainer = styled.div`
   width: 100%;
+  padding: 0px 1rem;
+  display: flex;
   border: 2px solid #d0d0e3;
-  border-radius: 15px;
+  background: #ffffff;
+  border-radius: 0.9375rem;
 `;
 
 const Input = styled.input`
   border: none;
-  background: #ffffff;
-  height: 54px;
-  border-radius: 15px;
-  padding: 16px;
+  background-color: none;
+  height: 3.375rem;
+  border-radius: 0.9375rem;
 `;
 
 const Footer = () => {
@@ -114,6 +117,7 @@ const Footer = () => {
 
         <InputContainer>
           <Input placeholder="Email Address" />
+          <img src="/Arrow.svg" alt="arrow" />
         </InputContainer>
       </Column>
     </Container>
