@@ -81,12 +81,6 @@ const InputText = styled.div`
   }
 `;
 
-const ImageContainer = styled.div`
-  img {
-    border-bottom-right-radius: 50px;
-  }
-`;
-
 const Hero = () => {
   return (
     <Container>
@@ -118,9 +112,15 @@ const Hero = () => {
         </InputContainer>
       </Text>
 
-      <ImageContainer>
-        <Image src="/Banner Image.png" alt="logo" width={780} height={680} />
-      </ImageContainer>
+      <>
+        <Image
+          src="/Banner Image.png"
+          alt="logo"
+          width={780}
+          height={680}
+          className="border-bottom "
+        />
+      </>
     </Container>
   );
 };
