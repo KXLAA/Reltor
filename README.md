@@ -6,7 +6,7 @@
 
 <br />
 
-Design by[Jignasu Solanki](https://www.instagram.com/jignasu_jigs/). Check it out [here](https://www.figma.com/community/file/1055120348999904183).
+Design by [Jignasu Solanki](https://www.instagram.com/jignasu_jigs/). Check it out [here](https://www.figma.com/community/file/1055120348999904183).
 
 See live site [here](https://real-estate-lp-chi.vercel.app/)
 
